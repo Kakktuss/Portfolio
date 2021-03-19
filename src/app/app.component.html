@@ -1,0 +1,297 @@
+<div id="main">
+  <div id="enteteDiv">
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div id="contentEntete">
+      <p>
+        Hello I'm <span class="bold">Benjamin Mandervelde</span>
+      </p>
+      <div>
+        A <h1>Freelance back-end web developer</h1> that will bring your project alive and carefully grow it
+      </div>
+      <button id="btnEntete" [routerLink]="'./'" fragment="aboutDivTop">View My Work <span>→</span></button>
+    </div>
+  </div>
+  <div id="content">
+    <header>
+      <div class="header header--alpha">
+        <a [class.pink]="headerElemInView === 'about'" [routerLink]="'./'" fragment="aboutDiv">
+          About
+        </a>
+        <a [class.pink]="headerElemInView === 'whatido'" [routerLink]="'./'" fragment="flexSkillContent">
+          What I Do
+        </a>
+        <a [class.pink]="headerElemInView === 'portfolio'" [routerLink]="'./'" fragment="portfolioContent">
+          Portfolio
+        </a>
+        <a [class.pink]="headerElemInView === 'contact'" [routerLink]="'./'" fragment="contactDiv">
+          Contact
+        </a>
+      </div>
+      <div class="header header--beta">
+        <a [class.pink]="headerElemInView === 'about'" [routerLink]="" fragment="aboutDiv">
+          About
+        </a>
+        <a [class.pink]="headerElemInView === 'whatido'" [routerLink]="" fragment="flexSkillContent">
+          What I Do
+        </a>
+        <a [class.pink]="headerElemInView === 'portfolio'" [routerLink]="" fragment="portfolioContent">
+          Portfolio
+        </a>
+        <a [class.pink]="headerElemInView === 'contact'" [routerLink]="" fragment="contactDiv">
+          Contact
+        </a>
+      </div>
+    </header>
+    <div class="fake-header"></div>
+    <div id="aboutDiv" style="position: relative;">
+      <div id="aboutDivTop" style="position: absolute; top: 0; width: 0; height: 0;"></div>
+      <div id="aboutContent">
+        <p id="aboutAnchor" class="title bold gray">About</p>
+        <div class="navBarAbout"></div>
+        <div id="aboutMainDiv">
+          <div>
+            <div class="aboutItemDiv" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-in-out"
+              data-aos-once="true">
+              <img alt="creating lag free websites" src="./assets/about/speedometer.svg">
+            </div>
+            <div class="titleSkill">
+              <p>Fast</p>
+            </div>
+            <p class="descSkill">Fast load times and lag free interaction, my highest priority.</p>
+          </div>
+          <div>
+            <div class="aboutItemDiv" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-in-out"
+              data-aos-once="true">
+              <img alt="intuitive user experience" src="./assets/about/lightbulb.svg">
+            </div>
+            <div class="titleSkill">
+              <p>Intuitive</p>
+            </div>
+            <p class="descSkill">Strong preference for easy to use, intuitive UX/UI.</p>
+          </div>
+          <div>
+            <div class="aboutItemDiv" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-in-out"
+              data-aos-once="true">
+              <img alt="available fastly" src="./assets/about/startup.svg">
+            </div>
+            <div class="titleSkill">
+              <p>Available</p>
+            </div>
+            <p class="descSkill">Fast delivery to production, with the possiblility for a Minimum Viable Product</p>
+          </div>
+        </div>
+      </div>
+      <div id="aboutProfileDiv">
+        <div id="divPresentation">
+          <img alt="who Am I?" src="./assets/undraw1.png">
+          <p class="subtitle bold ">Who's this guy ?</p>
+          <div id="textDescription">I am a <h2>fullstack developer</h2> that began web development at the age of 10 with over 8 years of self-taught.
+            <br/>I have passion for web development precisely backend development and monolithic or microservices architecture design.
+            <br/><a [routerLink]="'./'" fragment="contactDiv">Let's make something special.</a></div>
+        </div>
+        <div id="aboutSkillsDiv">
+          <div>
+            <div class="skillBar">
+              <div class="skillName"><h3>HTML</h3></div>
+              <div class="progress 100"></div>
+            </div>
+            <div class="skillBar">
+              <div class="skillName"><h3>.NET Core</h3></div>
+              <div class="progress 80"></div>
+            </div>
+            <div class="skillBar">
+              <div class="skillName">Angular</div>
+              <div class="progress 80"></div>
+            </div>
+            <div class="skillBar">
+              <div class="skillName">NodeJS</div>
+              <div class="progress 80"></div>
+            </div>
+            <div class="skillBar">
+              <div class="skillName"><h3>CSS</h3></div>
+              <div class="progress 75"></div>
+            </div>
+            <div class="skillBar">
+              <div class="skillName">Typescript</div>
+              <div class="progress 75"></div>
+            </div>
+            <div class="skillBar">
+              <div class="skillName"><h3>PHP</h3></div>
+              <div class="progress 75"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="flexSkillContent">
+      <p class="title bold gray" id="whatIdoAnchor">What I Do</p>
+      <p class=" subTitleSkill">Things I'm skilled and passionnate about</p>
+      <div id="flexSkillDiv">
+        <div>
+          <div class="skillDiv" data-aos="fade-in" data-aos-duration="700" data-aos-easing="ease-in-out"
+            data-aos-once="true">
+            <img alt="Web Development" src="./assets/skills/code.svg">
+          </div>
+          <div class="titleSkill">
+            <p>Web Application</p>
+            <p>Development</p>
+          </div>
+          <p class="descSkill">Fast, responsive and engaging apps that bring your ideas to life.</p>
+        </div>
+        <div>
+          <div class="skillDiv" data-aos="fade-in" data-aos-duration="700" data-aos-easing="ease-in-out"
+            data-aos-once="true">
+            <img alt="Mobile Development" src="./assets/skills/smartphone.svg">
+          </div>
+          <div class="titleSkill">
+            <p>Mobile Application</p>
+            <p>Development</p>
+          </div>
+          <p class="descSkill">Cross-platform apps built with efficiency and speed for Android and iOs at once.</p>
+        </div>
+        <div>
+          <div class="skillDiv" data-aos="fade-in" data-aos-duration="700" data-aos-easing="ease-in-out"
+            data-aos-once="true">
+            <img alt="REST API" src="./assets/skills/settings.svg">
+          </div>
+          <div class="titleSkill">
+            <p>API REST / GraphQL</p>
+          </div>
+          <p class="descSkill">REST API or GraphQL API development using NodeJS and .Net core 5.0</p>
+        </div>
+        <div>
+          <div class="skillDiv" data-aos="fade-in" data-aos-duration="700" data-aos-easing="ease-in-out"
+            data-aos-once="true">
+            <img alt="Database Creation and Managment" src="./assets/skills/database.svg">
+          </div>
+          <p class="titleSkill">Database Design</p>
+          <p class="descSkill">Database architectures in NoSql or SQL Databases, always aiming for performance, scale
+            and stability.</p>
+        </div>
+    </div>
+    <div id="portfolioContent">
+      <p class="title bold gray" id="portfolioAnchor">Portfolio</p>
+      <p class=" subTitleSkill">Things I've done</p>
+      <p id="descPortfolio">From Back-End development using .NET Core to Full-Stack Angular & Node.Js Developer,
+        Check out my latest web
+        software development portfolio projects.</p>
+        <div id="filterPortfolioDiv">
+          <div class="btnFilter" [class.filterClicked]="portfolioValue === 'all'"
+            (click)="updatePortfolio('all')">
+            <p>Show all</p>
+          </div>
+          <div class="btnFilter" [class.filterClicked]="portfolioValue === 'front-end'"
+            (click)="updatePortfolio('front-end')">
+            <p>front-end</p>
+          </div>
+          <div class="btnFilter" [class.filterClicked]="portfolioValue === 'back-end'"
+            (click)="updatePortfolio('back-end')">
+            <p>back-end</p>
+          </div>
+          <div class="btnFilter" [class.filterClicked]="portfolioValue === 'angular'" (click)="updatePortfolio('angular')">
+              <p>angular</p>
+          </div>
+          <div class="btnFilter" [class.filterClicked]="portfolioValue === 'node.js'" (click)="updatePortfolio('node.js')">
+            <p>nodejs</p>
+          </div>
+          <div class="btnFilter" [class.filterClicked]="portfolioValue === 'javascript'"
+          (click)="updatePortfolio('javascript')">
+            <p>javascript</p>
+          </div>
+          <div class="btnFilter" [class.filterClicked]="portfolioValue === 'javascript'"
+               (click)="updatePortfolio('typescript')">
+            <p>typescript</p>
+          </div>
+          <div class="btnFilter" [class.filterClicked]="portfolioValue === 'csharp'" (click)="updatePortfolio('csharp')">
+              <p>C#</p>
+          </div>
+        </div>
+      <div id="portfolioProjects">
+        <div class="project" (click)="openPanel('seoreborn')" *ngIf="checkFilter('seoreborn')">
+          <div class="bar">
+              <div class="point red"></div>
+              <div class="point orange"></div>
+              <div class="point green"></div>
+              <p>SEO Reborn • E-Commerce Platform</p>
+          </div>
+          <div class="imgDivPortfolio">
+              <div class="voileImg">
+                <div class="voileBtnPortfolio">
+                  <div class="btnPortfolio">
+                    <p>Angular 11</p>
+                  </div>
+                  <div class="btnPortfolio">
+                    <p>Nest.js</p>
+                  </div>
+                  <div class="btnPortfolio">
+                    <p>C#</p>
+                  </div>
+                  <div class="btnPortfolio">
+                    <p>MongoDB</p>
+                  </div>
+                  <div class="btnPortfolio">
+                    <p>SQL</p>
+                  </div>
+                </div>
+              </div>
+              <img alt="Ecommerce Platform Project" src="../assets/projects/seoreborn.png">
+          </div>
+        </div>
+        <div class="project" (click)="openPanel('piwid')" *ngIf="checkFilter('piwid')">
+          <div class="bar">
+            <div class="point red"></div>
+            <div class="point orange"></div>
+            <div class="point green"></div>
+            <p>Piwid • Ecwid e-commerce plateform payment provider</p>
+          </div>
+          <div class="imgDivPortfolio">
+            <div class="voileImg">
+              <div class="voileBtnPortfolio">
+                <div class="btnPortfolio">
+                  <p>Angular 11</p>
+                </div>
+                <div class="btnPortfolio">
+                  <p>C#</p>
+                </div>
+                <div class="btnPortfolio">
+                  <p>SQL</p>
+                </div>
+              </div>
+            </div>
+            <img alt="Ecommerce Platform Project" src="../assets/projects/piwid.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contactDiv">
+      <p id="contact" class="title bold white">CONTACT</p>
+      <div class="navBar"></div>
+      <p id="questionDesc" class="bold">Have a question or want to work together?</p>
+      <form id="formContact"  #formContact="ngForm">
+        <input [(ngModel)]="contact.name" id="name" name="name" type="text"
+        placeholder="Name" required #name="ngModel">
+        <input [(ngModel)]="contact.email" placeholder="Email" type="email" name="email" id="email" required #email="ngModel" pattern=".+@.+">
+        <textarea [(ngModel)]="contact.message" required placeholder="Message" type="text" name="message" id="message" required #message="ngModel"></textarea>
+        <button type="button" id="submit"(click)="sendMessage(formContact)">Submit</button>
+        <!-- <mat-progress-spinner *ngIf="submitLoading === true" mode="indeterminate"></mat-progress-spinner> -->
+        <span id="submitReport" [class.success]="submitReportSuccess === true">{{submitReport}}</span>
+      </form>
+    </div>
+    <footer>
+      <div id="arrow" [routerLink]="'./'" fragment="enteteDiv">
+        <p>»</p>
+      </div>
+      <div id="footerDiv">
+        <a class="footerItem" target="_blank" href="https://www.linkedin.com/in/benjamin-mandervelde-5447b7198">
+          <img alt="linkedin" src="./assets/footer/linkedin-logo.svg">
+        </a>
+        <a class="footerItem" target="_blank" href="https://github.com/Kakktuss/">
+          <img alt="github" src="./assets/footer/github-logo.svg">
+        </a>
+      </div>
+      <p id="copyright">MANDERVELDE BENJAMIN <span>©2021</span></p>
+    </footer>
+  </div>
+</div>
